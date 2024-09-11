@@ -1,0 +1,21 @@
+Binding: useful_proj_template
+Title: Useful Project Template
+Subtitle: Create a project with my template
+OpenFiles: README.qmd
+
+Parameter: title
+Widget: TextInput
+Label: README title
+Position: left
+
+Parameter: pipeline
+Widget: CheckboxInput
+Label: Include pipline script?
+Default: On
+Position: left
+
+Parameter: readme
+Widget: SelectInput
+Label: README output format
+Fields: html, github, markdown
+Position: right

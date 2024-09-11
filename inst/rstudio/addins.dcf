@@ -1,0 +1,9 @@
+Name: Open my script
+Description: Opens an R script with my template.
+Binding: useful_script_addin
+Interactive: false
+
+Name: Open my roxygen script
+Description: Opens an R script with my roxygen template.
+Binding: useful_roxygen_addin
+Interactive: false

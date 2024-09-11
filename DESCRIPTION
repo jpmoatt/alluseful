@@ -4,11 +4,26 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Josh", "Moatt", , "joshua.moatt@defra.gov.uk", role = c("aut", "cre"))
 Description: This is a personal package created to contain all the useful elements 
-I need for effective coding. It contains functions to set up my rstudio IDE how I like,
-personalised themes, templates for scripts, packages etc. It is not intended for 
-distribution or use by anyone else.
+ I need for effective coding. It contains functions to set up my rstudio IDE how I like,
+ personalised themes, templates for scripts, packages etc. It is not intended for 
+ distribution or use by anyone else.
 License: MIT + file LICENSE
 Encoding: UTF-8
+Imports:
+    cli (>= 3.6.2),
+    credentials (>= 2.0.1),
+    devtools (>= 2.4.5),
+    fs (>= 1.6.4),
+    gert (>= 2.1.0),
+    gitcreds (>= 0.1.2),
+    glue (>= 1.7.0),
+    here (>= 1.0.1),
+    magrittr (>= 2.0.3),
+    pkgbuild (>= 1.4.4),
+    quarto (>= 1.4.4),
+    rstudioapi (>= 0.16.0),
+    stringr (>= 1.5.1),
+    usethis (>= 3.0.0)
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 Suggests: 
