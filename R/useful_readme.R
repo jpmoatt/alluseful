@@ -27,8 +27,8 @@
 useful_readme <- function(format = c("markdown",
                                      "github",
                                      "html"),
-                             file_path = NULL,
-                             readme_title = NULL) {
+                          file_path = NULL,
+                          readme_title = NULL) {
 
   # output format
   if (format == "github") {

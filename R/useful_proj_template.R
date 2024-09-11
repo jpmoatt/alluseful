@@ -31,8 +31,8 @@ useful_proj_template <- function(path, ...) {
 
   # set default title if no text entered
   params$title <- ifelse(nchar(params$title) < 1,
-                          "Project title",
-                          params$title)
+                         "Project title",
+                         params$title)
 
 
   alluseful::useful_readme(format = params$readme,

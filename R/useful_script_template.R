@@ -62,7 +62,7 @@ useful_script_template <- function(format = c("mine",
                                               "custom",
                                               "manual_edit",
                                               "blank"),
-                                      template = NULL) {
+                                   template = NULL) {
 
 
 
