@@ -1,0 +1,16 @@
+Package: alluseful
+Title: Contains my personal templates, functions, themes etc.
+Version: 0.0.0.9000
+Authors@R: 
+    person("Josh", "Moatt", , "joshua.moatt@defra.gov.uk", role = c("aut", "cre"))
+Description: This is a personal package created to contain all the useful elements 
+I need for effective coding. It contains functions to set up my rstudio IDE how I like,
+personalised themes, templates for scripts, packages etc. It is not intended for 
+distribution or use by anyone else.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
