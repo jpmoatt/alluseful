@@ -65,7 +65,7 @@ useful_rstudio_setup <- function() {
                    highlight_selected_line = FALSE, # highlight line cursor is on
                    highlight_r_function_calls = TRUE, # highlight R function calls
                    show_margin = FALSE, # don't show margin (default = 80 characters)
-                   font_size_points =11, # change font size (default is 10)
+                   #font_size_points =11, # change font size (default is 10)
                    rainbow_parentheses = TRUE, # colour match brackets
                    color_preview = TRUE, # hexcode previews on
                    panes = my_pane_layout) # Pane layout as set above
