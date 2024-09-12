@@ -3,7 +3,7 @@
 :root {
   /* syntax highlights */
   --my-dark-bracket: #d4d4d4;
-  --my-dark-comment: #BEBEBE;
+  --my-dark-comment: #D6CFC7;
   --my-dark-constant: #FF7AB2;
   --my-dark-constant-numeric: #FFCDA8;
   --my-dark-function-declaration: #3fb2ff;
