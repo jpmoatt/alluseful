@@ -4,12 +4,11 @@
 \alias{useful_connect_github}
 \title{Connect RStudio to your GitHub account}
 \usage{
-useful_connect_github()
+useful_connect_github(defra = TRUE)
 }
 \arguments{
-\item{username}{string containing GitHub username}
-
-\item{email}{string containing email address used for gitHub account}
+\item{defra}{default TRUE. If TRUE will set the defra proxy in the terminal
+(needed for linking to github)}
 }
 \value{
 GitHub credentials and PAT set

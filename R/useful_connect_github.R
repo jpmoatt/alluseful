@@ -30,23 +30,26 @@
 #'
 #' Guidance on how to create a PAT can be found here: ADD LINK.
 #'
-#' @param username string containing GitHub username
-#'
-#' @param email string containing email address used for gitHub account
+#' @param defra default TRUE. If TRUE will set the defra proxy in the terminal
+#'   (needed for linking to github)
 #'
 #' @return
 #' GitHub credentials and PAT set
 #'
 #' @export
 
-useful_connect_github <- function() {
+useful_connect_github <- function(defra = TRUE) {
 
-  # set proxy
-  Sys.setenv(https_proxy = "http://secpr7e.demeter.zeus.gsi.gov.uk:80")
+  # we only need to set the proxy if on Defra machines.
+  if (defra) {
+    # set proxy
+    Sys.setenv(https_proxy = "http://secpr7e.demeter.zeus.gsi.gov.uk:80")
 
-  ## this will run the terminal commands ----
-  # proxy
-  system("git config --global http.proxy http://secpr7e.demeter.zeus.gsi.gov.uk:80")
+    ## this will run the terminal commands ----
+    # proxy
+    system("git config --global http.proxy http://secpr7e.demeter.zeus.gsi.gov.uk:80")
+  }
+
   # GitHub UUN
   system('git config --global user.name "jpmoatt"')
   # email
