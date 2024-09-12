@@ -41,8 +41,8 @@ useful_randomtheme_addin <- function() {
   themes <- c("my-dark",
               "my-light",
               "my-green",
-              "Chaos",
-              "Night owl")
+              "my-chaos",
+              "my-night-owl")
 
   # select random
   theme <- sample(themes, 1)
