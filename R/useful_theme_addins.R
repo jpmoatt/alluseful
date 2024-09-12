@@ -24,3 +24,29 @@ useful_darktheme_addin <- function() {
   rstudioapi::applyTheme("my-dark")
 
 }
+
+#' @export
+#' @rdname useful_theme_addins
+useful_greentheme_addin <- function() {
+
+  rstudioapi::applyTheme("my-green")
+
+}
+
+#' @export
+#' @rdname useful_theme_addins
+useful_randomtheme_addin <- function() {
+
+  # themes I use
+  themes <- c("my-dark",
+              "my-light",
+              "my-green",
+              "Chaos",
+              "Night owl")
+
+  # select random
+  theme <- sample(themes, 1)
+
+  rstudioapi::applyTheme(theme)
+
+}

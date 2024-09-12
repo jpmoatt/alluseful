@@ -22,3 +22,8 @@ Name: Aplly green theme
 Description: Apply my green theme.
 Binding: useful_greentheme_addin
 Interactive: false
+
+Name: Aplly random theme
+Description: Apply a random theme from my selection.
+Binding: useful_randomtheme_addin
+Interactive: false
