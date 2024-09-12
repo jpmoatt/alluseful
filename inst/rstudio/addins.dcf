@@ -8,22 +8,22 @@ Description: Opens an R script with my roxygen template.
 Binding: useful_roxygen_addin
 Interactive: false
 
-Name: Aplly light theme
+Name: Apply light theme
 Description: Apply my light theme.
 Binding: useful_lighttheme_addin
 Interactive: false
 
-Name: Aplly dark theme
+Name: Apply dark theme
 Description: Apply my dark theme.
 Binding: useful_darktheme_addin
 Interactive: false
 
-Name: Aplly green theme
+Name: Apply green theme
 Description: Apply my green theme.
 Binding: useful_greentheme_addin
 Interactive: false
 
-Name: Aplly random theme
+Name: Apply random theme
 Description: Apply a random theme from my selection.
 Binding: useful_randomtheme_addin
 Interactive: false
