@@ -53,7 +53,7 @@
 }
 
 .ace_fold {
-  background-color: #FF7F00;
+  background-color: #FC6A03;
   border-color: #000000;
 }
 
@@ -63,7 +63,7 @@
 
 
 .ace_keyword {
-  color: #FF7F00;
+  color: #FC6A03;
 
 }
 
@@ -88,7 +88,7 @@
 }
 
 .ace_support.ace_function {
-  color: #FF7F00;
+  color: #FC6A03;
 
 }
 
@@ -98,16 +98,16 @@
 }
 
 .ace_string {
-  color: #6A3D9A;
+  color: #008000;
 
 }
 
 .ace_comment.ace_sectionhead {
-  color: #002D62;
+  color: #1F78B4;
 }
 
 .ace_comment {
-  color: #1F78B4;
+  color: #4169E1;
 
 }
 
@@ -117,13 +117,12 @@
 }
 
 .ace_meta.ace_tag {
-  color: #FF7F00;
+  color: #FC6A03;
 
 }
 
 .ace_markup.ace_heading {
   color: #E31A1C;
-  background-color: #FB9A99;
 
 }
 
@@ -139,7 +138,7 @@
   z-index: -1;
 }
 .nocolor.ace_editor .ace_line span {
-  color: #ff7f00 !important;
+  color: #FC6A03 !important;
 }
 .ace_bracket {
   margin: 0 !important;

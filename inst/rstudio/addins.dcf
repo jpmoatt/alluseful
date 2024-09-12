@@ -17,3 +17,8 @@ Name: Aplly dark theme
 Description: Apply my dark theme.
 Binding: useful_darktheme_addin
 Interactive: false
+
+Name: Aplly green theme
+Description: Apply my green theme.
+Binding: useful_greentheme_addin
+Interactive: false
