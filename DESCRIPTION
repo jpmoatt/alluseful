@@ -20,6 +20,7 @@ Imports:
     here (>= 1.0.1),
     magrittr (>= 2.0.3),
     pkgbuild (>= 1.4.4),
+    purrr (>= 1.0.2),
     quarto (>= 1.4.4),
     rstudioapi (>= 0.16.0),
     stringr (>= 1.5.1),
