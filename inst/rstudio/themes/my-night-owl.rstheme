@@ -103,8 +103,11 @@
 .ace_string.ace_regexp {
 	color: #5ca7e4;
 }
+.ace_comment.ace_sectionhead {
+  color: #4CBB17;
+}
 .ace_comment {
-	color: #D6CFC7;
+	color: #F0FFF0;
 }
 .ace_variable {
 	color: #addb67;
