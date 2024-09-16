@@ -2,7 +2,7 @@
 /* rs-theme-is-dark: TRUE */
 .ace_gutter {
   background: #141414;
-  color: #595959;
+  color: #C5C6C7;
   border-right: 1px solid #282828;
 }
 .ace_gutter-cell.ace_warning {
@@ -56,7 +56,7 @@
   color: #404040;
 }
 .ace_keyword {
-  color:#00698F;
+  color:#1E90FF;
 }
 .ace_keyword.ace_operator {
   color:#FF308F;
@@ -93,8 +93,11 @@
 .ace_string {
   color:#58C554;
 }
+.ace_comment.ace_sectionhead {
+  color: #FF00FF;
+}
 .ace_comment {
-  color:#D6CFC7;
+  color:#FFD8F0;
   padding-bottom: 0px;
 }
 .ace_variable {
