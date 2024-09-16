@@ -3,6 +3,7 @@
 export("%>%")
 export(useful_add_themes)
 export(useful_connect_github)
+export(useful_console_prompt)
 export(useful_darktheme_addin)
 export(useful_gitignore)
 export(useful_greentheme_addin)
