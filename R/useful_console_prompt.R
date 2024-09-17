@@ -28,9 +28,17 @@ useful_console_prompt <- function(scope = c("user",
     rprofile_path <- "./.Rprofile"
   }
 
-  if (prompt == "emoji") {
-    my_prompt <- '
-  .First <- function() {
+  current_profile <- readLines(rprofile_path)
+
+  if (any(grepl("\\.First <- function\\(", current_profile)) &&
+      any(grepl("my_prompt <- function\\(", current_profile))) {
+
+    cli::cli_alert_danger("Note: custom profile already present\n")
+    cli::cli_alert_info("Edit using `usethis::edit_r_profile()` and try again.")
+    stop("Prompt already present!")
+
+  } else if (prompt == "emoji") {
+    my_prompt <- '.First <- function() {
   my_prompt <- function(...) {
     git_branch <- suppressWarnings(system("git rev-parse --abbrev-ref HEAD",
                                           ignore.stderr = TRUE,
@@ -53,19 +61,14 @@ useful_console_prompt <- function(scope = c("user",
       "[", emoji::emoji(emoj), git_msg, "]> "
     )
 
-    #   console_msg <- glue::glue(
-    #   "[{emoji::emoji(emoj)}","{git_msg}]> "
-    # )
     options(prompt = console_msg)
     invisible(TRUE)
   }
   my_prompt()
   addTaskCallback(my_prompt)
-}
-  '
+}'
   } else if (prompt == "git") {
-    my_prompt <- '
-  .First <- function() {
+    my_prompt <- '.First <- function() {
   my_prompt <- function(...) {
     git_branch <- suppressWarnings(system("git rev-parse --abbrev-ref HEAD",
                                           ignore.stderr = TRUE,
@@ -85,8 +88,7 @@ useful_console_prompt <- function(scope = c("user",
   }
   my_prompt()
   addTaskCallback(my_prompt)
-}
-  '
+}'
   }
 # write to file
 cat(my_prompt, file = rprofile_path, append = TRUE)
