@@ -314,7 +314,7 @@
 }
 
 .ace_marker-layer .ace_active-line {
-  background: #1b1b1b;
+  background: #363636;
 }
 
 .ace_marker-layer .ace_selection {
