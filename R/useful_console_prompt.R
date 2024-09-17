@@ -35,7 +35,7 @@ useful_console_prompt <- function(scope = c("user",
 
     cli::cli_alert_danger("Note: custom profile already present\n")
     cli::cli_alert_info("Edit using `usethis::edit_r_profile()` and try again.")
-    stop("Prompt already present!")
+    stop("Cancelled: Prompt already present!", call = FALSE)
 
   } else if (prompt == "emoji") {
     my_prompt <- '.First <- function() {
