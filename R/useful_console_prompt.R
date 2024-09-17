@@ -66,7 +66,8 @@ useful_console_prompt <- function(scope = c("user",
   }
   my_prompt()
   addTaskCallback(my_prompt)
-}'
+}
+  '
   } else if (prompt == "git") {
     my_prompt <- '.First <- function() {
   my_prompt <- function(...) {
@@ -88,7 +89,8 @@ useful_console_prompt <- function(scope = c("user",
   }
   my_prompt()
   addTaskCallback(my_prompt)
-}'
+}
+'
   }
 # write to file
 cat(my_prompt, file = rprofile_path, append = TRUE)
