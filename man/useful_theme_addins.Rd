@@ -3,15 +3,12 @@
 \name{useful_lighttheme_addin}
 \alias{useful_lighttheme_addin}
 \alias{useful_darktheme_addin}
-\alias{useful_greentheme_addin}
 \alias{useful_randomtheme_addin}
 \title{Apply my rstudio themes via addins}
 \usage{
 useful_lighttheme_addin()
 
 useful_darktheme_addin()
-
-useful_greentheme_addin()
 
 useful_randomtheme_addin()
 }

@@ -18,11 +18,6 @@ Description: Apply my dark theme.
 Binding: useful_darktheme_addin
 Interactive: false
 
-Name: Apply green theme
-Description: Apply my green theme.
-Binding: useful_greentheme_addin
-Interactive: false
-
 Name: Apply random theme
 Description: Apply a random theme from my selection.
 Binding: useful_randomtheme_addin

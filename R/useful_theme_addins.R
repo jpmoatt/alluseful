@@ -27,14 +27,6 @@ useful_darktheme_addin <- function() {
 
 #' @export
 #' @rdname useful_theme_addins
-useful_greentheme_addin <- function() {
-
-  rstudioapi::applyTheme("my-green")
-
-}
-
-#' @export
-#' @rdname useful_theme_addins
 useful_randomtheme_addin <- function() {
 
   # themes I use
