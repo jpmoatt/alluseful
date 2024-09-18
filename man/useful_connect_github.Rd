@@ -4,11 +4,9 @@
 \alias{useful_connect_github}
 \title{Connect RStudio to your GitHub account}
 \usage{
-useful_connect_github(pat, defra = TRUE)
+useful_connect_github(defra = TRUE)
 }
 \arguments{
-\item{pat}{string containing new PAT}
-
 \item{defra}{default TRUE. If TRUE will set the defra proxy in the terminal
 (needed for linking to github)}
 }
@@ -26,13 +24,14 @@ Access Token (PAT) and connect RStudio to GitHub. This is essential if you
 want to work in RStudio in projects/repos stored on GitHub.
 
 It uses \code{\link[=system]{system()}} to run the necessary code in the terminal to set your
-credentials, and writes/updates your github PAT to your .Renviron file to
-ensure git functionality. Instead of the intercative requirement (see below)
-this new way does not require any inputs by the user after the function call.
+credentials, and uses \code{\link[=gitcreds_set]{gitcreds_set()}} and \code{\link[=set_github_pat]{set_github_pat()}} from the
+\code{gitcreds} and \code{credentials} packages to connect your RStudio to GitHub.
 
-This new method replaces the old method suggested by defra which used
-\code{\link[=gitcreds_set]{gitcreds_set()}} and \code{\link[=set_github_pat]{set_github_pat()}} from the \code{gitcreds} and \code{credentials}
-packages to connect your RStudio to GitHub.
+An additional feature I have added, not mentioned in the Defra instructions
+is to ad the \code{\link[=set_github_pat]{set_github_pat()}} function call to your .Rprofile. This will
+ensure your PAT is set for every R session, meaning you wont need to provide
+your PAT when running functions such as \code{\link[=install_github]{install_github()}} from the devtools
+package.
 
 \code{\link[=gitcreds_set]{gitcreds_set()}} is an interactive function and will prompt users for input.
 To replace existing credentials/PAT choose option 2. You will then be

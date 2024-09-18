@@ -12,13 +12,14 @@
 #' want to work in RStudio in projects/repos stored on GitHub.
 #'
 #' It uses [system()] to run the necessary code in the terminal to set your
-#' credentials, and writes/updates your github PAT to your .Renviron file to
-#' ensure git functionality. Instead of the intercative requirement (see below)
-#' this new way does not require any inputs by the user after the function call.
+#' credentials, and uses [gitcreds_set()] and [set_github_pat()] from the
+#' `gitcreds` and `credentials` packages to connect your RStudio to GitHub.
 #'
-#' This new method replaces the old method suggested by defra which used
-#' [gitcreds_set()] and [set_github_pat()] from the `gitcreds` and `credentials`
-#' packages to connect your RStudio to GitHub.
+#' An additional feature I have added, not mentioned in the Defra instructions
+#' is to ad the [set_github_pat()] function call to your .Rprofile. This will
+#' ensure your PAT is set for every R session, meaning you wont need to provide
+#' your PAT when running functions such as [install_github()] from the devtools
+#' package.
 #'
 #' [gitcreds_set()] is an interactive function and will prompt users for input.
 #' To replace existing credentials/PAT choose option 2. You will then be
@@ -34,8 +35,6 @@
 #'
 #' Guidance on how to create a PAT can be found here: ADD LINK.
 #'
-#' @param pat string containing new PAT
-#'
 #' @param defra default TRUE. If TRUE will set the defra proxy in the terminal
 #'   (needed for linking to github)
 #'
@@ -44,8 +43,7 @@
 #'
 #' @export
 
-useful_connect_github <- function(pat,
-                                  defra = TRUE) {
+useful_connect_github <- function(defra = TRUE) {
 
   ## set my details ----
   # we only need to set the proxy if on Defra machines.
@@ -69,36 +67,43 @@ useful_connect_github <- function(pat,
   system('git config --global --list')
 
   ## set pat ----
-  # this is an alternative to the method suggested by Defra. It is more robust.
+  # set gitcreds - this will prompt for user input
+  gitcreds::gitcreds_set()
 
-  # renviron path
-  renviron_path <- file.path(Sys.getenv("HOME"), ".Renviron")
+  # set PAT
+  credentials::set_github_pat()
 
-  # check .Renviron exists
-  if (file.exists(renviron_path)) {
-    renviron_lines <- readLines(renviron_path)
-  } else {
-    renviron_lines <- character()
-  }
-
-  # Check if GITHUB_PAT already exists in the file
-  pat_line <- grep("^GITHUB_PAT=", renviron_lines)
-
-  if (length(pat_line) > 0) {
-    # Replace the existing GITHUB_PAT line
-    renviron_lines[pat_line] <- paste0("GITHUB_PAT=", pat)
-  } else {
-    # If GITHUB_PAT does not exist, append it to the end
-    renviron_lines <- c(renviron_lines, paste0("GITHUB_PAT=", pat))
-  }
-
-  # Write the updated lines back to the .Renviron file
-  writeLines(renviron_lines, renviron_path)
-
+  # check PAT
+  pat <- Sys.getenv("GITHUB_PAT")
   cli::cli_alert_success("GitHub pat is {pat}")
 
-  # restart R
-  cli::cli_alert_info("Restarting R to change PAT...")
-  cli::cli_alert_info(cli::col_cyan('After restart, use `Sys.getenv("GITHUB_PAT")` to check your PAT has updated'), wrap = TRUE)
-  rstudioapi::restartSession()
+  ## update .Rprofile ----
+  # set path
+  rprofile_path <- "~/.Rprofile"
+
+  # check if function call present
+  rprofile_lines <- readLines(rprofile_path)
+
+  # check for function
+  cred_line <- grep("credentials", rprofile_lines)
+
+  # update .Rprofile
+  if (length(cred_line) == 0) {
+
+    # create function as string
+    cred_func <- 'credentials::set_github_pat()\n'
+
+    # add to .Rprofile
+    rprofile_lines <- c(rprofile_lines, cred_func)
+
+    # write lines
+    writeLines(rprofile_lines, rprofile_path)
+
+    cli::cli_alert_success("Added {.code credentials::set_github_pat()} to .Rprofile", wrap = TRUE)
+
+  } else if (length(cred_line) > 0) {
+    cli::cli_alert_success("{.code credentials::set_github_pat()} already in .Rprofile", wrap = TRUE)
+  }
+
+
 }
