@@ -91,7 +91,7 @@ useful_connect_github <- function(defra = TRUE) {
   if (length(cred_line) == 0) {
 
     # create function as string
-    cred_func <- 'credentials::set_github_pat()\n'
+    cred_func <- 'credentials::set_github_pat(verbose = FALSE)\n'
 
     # add to .Rprofile
     rprofile_lines <- c(rprofile_lines, cred_func)
