@@ -1,29 +1,26 @@
-#' @title
-#' Connect RStudio to your GitHub account
+#' @title Connect RStudio to your GitHub account
 #'
-#' @description
-#' This is a simple function which connect RStudio to GitHub, allowing you to
-#' work on GitHub repositories. This is an essential part of Reproducible
-#' Analytical Pipelines and best practice for coding.
+#' @description This is a simple function which connect RStudio to GitHub,
+#' allowing you to work on GitHub repositories. This is an essential part of
+#' Reproducible Analytical Pipelines and best practice for coding.
 #'
-#' @details
-#' This is a simple function which will set you GitHub credentials and Personal
-#' Access Token (PAT) and connect RStudio to GitHub. This is essential if you
-#' want to work in RStudio in projects/repos stored on GitHub.
+#' @details This is a simple function which will set you GitHub credentials and
+#' Personal Access Token (PAT) and connect RStudio to GitHub. This is essential
+#' if you want to work in RStudio in projects/repos stored on GitHub.
 #'
 #' It uses [system()] to run the necessary code in the terminal to set your
 #' credentials, and uses [gitcreds_set()] and [set_github_pat()] from the
 #' `gitcreds` and `credentials` packages to connect your RStudio to GitHub.
 #'
-#' An additional feature I have added, not mentioned in the Defra instructions
-#' is to ad the [set_github_pat()] function call to your .Rprofile. This will
-#' ensure your PAT is set for every R session, meaning you wont need to provide
-#' your PAT when running functions such as [install_github()] from the devtools
-#' package.
-#'
 #' [gitcreds_set()] is an interactive function and will prompt users for input.
 #' To replace existing credentials/PAT choose option 2. You will then be
 #' prompted for you PAT. PAT should be changed every 30 days to ensure security.
+#'
+#' An additional feature I have added, not mentioned in the Defra instructions
+#' is to add the [set_github_pat()] function call to your .Rprofile. This will
+#' ensure your PAT is set for every R session, meaning you wont need to provide
+#' your PAT when running functions such as [install_github()] from the devtools
+#' package.
 #'
 #' Note: For this function to work you must:
 #'
@@ -38,8 +35,7 @@
 #' @param defra default TRUE. If TRUE will set the defra proxy in the terminal
 #'   (needed for linking to github)
 #'
-#' @return
-#' GitHub credentials and PAT set
+#' @return GitHub credentials and PAT set
 #'
 #' @export
 
@@ -104,6 +100,4 @@ useful_connect_github <- function(defra = TRUE) {
   } else if (length(cred_line) > 0) {
     cli::cli_alert_success("{.code credentials::set_github_pat()} already in .Rprofile", wrap = TRUE)
   }
-
-
 }
