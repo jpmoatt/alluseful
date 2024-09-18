@@ -99,6 +99,6 @@ useful_connect_github <- function(pat,
 
   # restart R
   cli::cli_alert_info("Restarting R to change PAT...")
-  cli::cli_alert_info(cli::col_cyan('After restart, use `Sys.getenv("GITHUB_PAT")` to check your PAT has updated', wrap = TRUE))
+  cli::cli_alert_info(cli::col_cyan('After restart, use `Sys.getenv("GITHUB_PAT")` to check your PAT has updated'), wrap = TRUE)
   rstudioapi::restartSession()
 }
