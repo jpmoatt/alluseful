@@ -59,7 +59,7 @@ useful_script_addin <- function() {
     "  readr, \n",
     "  readxl, \n",
     "  stringr, \n",
-    "  scales, \n",
+    "  scales \n",
     ") \n",
     "\n",
     "## - - - - - - - - - - - - - - \n",
