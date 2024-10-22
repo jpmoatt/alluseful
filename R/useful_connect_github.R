@@ -46,13 +46,11 @@ useful_connect_github <- function(defra = TRUE) {
 
   if (defra) {
     # set proxy
-    Sys.setenv(https_proxy = "https://secpr7e.demeter.zeus.gsi.gov.uk:80")
-    Sys.setenv(http_proxy = "http://secpr7e.demeter.zeus.gsi.gov.uk:80")
+    Sys.setenv(http_proxy = "http://127.0.0.1:9000")
 
     ## this will run the terminal commands ----
     # proxy
-    system("git config --global https.proxy https://secpr7e.demeter.zeus.gsi.gov.uk:80")
-    system("git config --global http.proxy http://secpr7e.demeter.zeus.gsi.gov.uk:80")
+    system("git config --global http.proxy http://127.0.0.1:9000")
   }
 
   # GitHub UUN
