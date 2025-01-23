@@ -21,7 +21,7 @@ useful_lighttheme_addin <- function() {
 #' @rdname useful_theme_addins
 useful_darktheme_addin <- function() {
 
-  rstudioapi::applyTheme("my-dark")
+  rstudioapi::applyTheme("my-kiss")
 
 }
 
@@ -30,9 +30,9 @@ useful_darktheme_addin <- function() {
 useful_randomtheme_addin <- function() {
 
   # themes I use
-  themes <- c("my-dark",
+  themes <- c("my-kiss",
               "my-light",
-              "my-green",
+              "my-grubber",
               "my-chaos",
               "my-night-owl")
 
