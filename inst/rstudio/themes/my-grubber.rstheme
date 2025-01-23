@@ -276,14 +276,14 @@
 
 .ace_comment.ace_sectionhead {
 
-  color: #837A75;
+  color: #dcdcdc;
 
 
 }
 
 .ace_comment {
 
-  color: #dcdcdc;
+  color: #837A75;
 
 
 
