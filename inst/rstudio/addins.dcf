@@ -13,11 +13,6 @@ Description: Apply my light theme.
 Binding: useful_lighttheme_addin
 Interactive: false
 
-Name: Apply kiss theme
-Description: Apply my kiss theme.
-Binding: useful_kisstheme_addin
-Interactive: false
-
 Name: Apply chaos theme
 Description: Apply my chaos theme.
 Binding: useful_chaostheme_addin
@@ -28,7 +23,3 @@ Description: Apply my grubber theme.
 Binding: useful_grubbertheme_addin
 Interactive: false
 
-Name: Apply random theme
-Description: Apply a random theme from my selection.
-Binding: useful_randomtheme_addin
-Interactive: false
