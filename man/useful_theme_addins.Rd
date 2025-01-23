@@ -2,13 +2,19 @@
 % Please edit documentation in R/useful_theme_addins.R
 \name{useful_lighttheme_addin}
 \alias{useful_lighttheme_addin}
-\alias{useful_darktheme_addin}
+\alias{useful_kisstheme_addin}
+\alias{useful_chaostheme_addin}
+\alias{useful_grubbertheme_addin}
 \alias{useful_randomtheme_addin}
 \title{Apply my rstudio themes via addins}
 \usage{
 useful_lighttheme_addin()
 
-useful_darktheme_addin()
+useful_kisstheme_addin()
+
+useful_chaostheme_addin()
+
+useful_grubbertheme_addin()
 
 useful_randomtheme_addin()
 }
