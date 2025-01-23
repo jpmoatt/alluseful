@@ -30,7 +30,10 @@
   color: #E6E1DC;
 }
 .ace_cursor {
-  border-left: 2px solid #FFFFFF;
+  border-left: 2px solid #FCE94F;
+}
+.normal-mode .ace_cursor {
+  background-color: #FCE94F;
 }
 .ace_cursor.ace_overwrite {
   border-left: 0px;
