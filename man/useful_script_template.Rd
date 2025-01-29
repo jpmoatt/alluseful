@@ -6,7 +6,8 @@
 \usage{
 useful_script_template(
   format = c("mine", "custom", "manual_edit", "blank"),
-  template = NULL
+  template = NULL,
+  dash = TRUE
 )
 }
 \arguments{
@@ -20,10 +21,12 @@ templates.}
 \item{template}{default is NULL, only used if format = "custom". Used to
 provide custom template design. Must be provided as a string. Must be
 provided if using format = "custom" or the function will return an error.}
+
+\item{dash}{default is FALSE. If TRUE changes the file path to the one needed
+for the RStudio server on DASH}
 }
 \value{
-New .R file created at "~/AppData/Roaming/RStudio/templates/default.R"
-containing the script template
+New .R file created containing the script template
 }
 \description{
 This function can be used to create a default R script template. All scripts
