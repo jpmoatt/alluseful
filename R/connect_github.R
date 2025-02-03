@@ -39,7 +39,7 @@
 #'
 #' @export
 
-useful_connect_github <- function(defra = TRUE) {
+connect_github <- function(defra = TRUE) {
 
   ## set my details ----
   # we only need to set the proxy if on Defra machines.

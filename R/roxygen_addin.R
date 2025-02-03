@@ -22,7 +22,7 @@
 #'
 #' @export
 
-useful_roxygen_addin <- function() {
+roxygen_addin <- function() {
 
   # make FS header template
   header <- stringr::str_c(

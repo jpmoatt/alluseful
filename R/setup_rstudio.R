@@ -14,7 +14,7 @@
 #'
 #' @export
 
-useful_rstudio_setup <- function() {
+setup_rstudio <- function() {
 
   # function for applying changes
   customise_layout <- function(...){

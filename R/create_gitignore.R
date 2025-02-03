@@ -34,7 +34,7 @@
 #' A gitignore file is added to the project.
 #'
 #' @export
-useful_gitignore <- function (type = "default",
+create_gitignore <- function (type = "default",
                               file_path = NULL,
                               custom_txt = NULL) {
 

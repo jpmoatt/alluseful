@@ -17,7 +17,7 @@
 #'
 #' @export
 
-useful_console_prompt <- function(scope = c("user",
+set_console_prompt <- function(scope = c("user",
                                             "project"),
                                   prompt = c("emoji",
                                              "git")) {

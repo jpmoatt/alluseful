@@ -24,7 +24,7 @@
 #'
 #'@export
 
-useful_readme <- function(format = c("markdown",
+create_readme <- function(format = c("markdown",
                                      "github",
                                      "html"),
                           file_path = NULL,

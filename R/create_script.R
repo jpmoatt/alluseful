@@ -19,7 +19,7 @@
 #'
 #' @export
 
-useful_script <- function(file_name = NULL,
+create_script <- function(file_name = NULL,
                           file_path = NULL,
                           project = NULL,
                           date = format(Sys.Date(), "%d/%m/%Y")) {

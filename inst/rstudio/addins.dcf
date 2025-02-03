@@ -1,25 +1,25 @@
 Name: Open my script
 Description: Opens an R script with my template.
-Binding: useful_script_addin
+Binding: script_addin
 Interactive: false
 
 Name: Open my roxygen script
 Description: Opens an R script with my roxygen template.
-Binding: useful_roxygen_addin
+Binding: roxygen_addin
 Interactive: false
 
 Name: Apply light theme
 Description: Apply my light theme.
-Binding: useful_lighttheme_addin
+Binding: lighttheme_addin
 Interactive: false
 
 Name: Apply chaos theme
 Description: Apply my chaos theme.
-Binding: useful_chaostheme_addin
+Binding: chaostheme_addin
 Interactive: false
 
 Name: Apply grubber theme
 Description: Apply my grubber theme.
-Binding: useful_grubbertheme_addin
+Binding: grubbertheme_addin
 Interactive: false
 

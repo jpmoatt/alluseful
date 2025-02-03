@@ -10,40 +10,40 @@
 #' themes added to the rstudio api
 #'
 #' @export
-#' @rdname useful_theme_addins
-useful_lighttheme_addin <- function() {
+#' @rdname theme_addins
+lighttheme_addin <- function() {
 
   rstudioapi::applyTheme("my-light")
 
 }
 
 #' @export
-#' @rdname useful_theme_addins
-useful_kisstheme_addin <- function() {
+#' @rdname theme_addins
+kisstheme_addin <- function() {
 
   rstudioapi::applyTheme("my-kiss")
 
 }
 
 #' @export
-#' @rdname useful_theme_addins
-useful_chaostheme_addin <- function() {
+#' @rdname theme_addins
+chaostheme_addin <- function() {
 
   rstudioapi::applyTheme("my-chaos")
 
 }
 
 #' @export
-#' @rdname useful_theme_addins
-useful_grubbertheme_addin <- function() {
+#' @rdname theme_addins
+grubbertheme_addin <- function() {
 
   rstudioapi::applyTheme("my-grubber")
 
 }
 
 #' @export
-#' @rdname useful_theme_addins
-useful_randomtheme_addin <- function() {
+#' @rdname theme_addins
+randomtheme_addin <- function() {
 
   # themes I use
   themes <- c("my-kiss",

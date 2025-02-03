@@ -43,7 +43,7 @@
 #' users are unable to push changes. If this happens try running `git push -u
 #' origin master` in the terminal, this should set you current branch as the
 #' master. We're not sure why this happens, but it is advisable to use
-#' [useful_connect_github()] to set your credentials properly before trying this
+#' [connect_github()] to set your credentials properly before trying this
 #' function.
 #'
 #' @param message initial commit message. Default is "Initial commit".
@@ -56,7 +56,7 @@
 #'
 #' @export
 
-useful_use_github <- function(message = "Initial commit",
+use_github <- function(message = "Initial commit",
                               private = TRUE) {
 
   ## add fs gitignore ----

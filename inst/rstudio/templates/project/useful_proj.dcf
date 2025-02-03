@@ -1,5 +1,5 @@
-Binding: useful_proj_template
-Title: Useful Project Template
+Binding: proj_template
+Title: My Project Template
 Subtitle: Create a project with my template
 OpenFiles: README.qmd
 

@@ -10,7 +10,7 @@
 #' themes added to the rstudio api
 #'
 #' @export
-useful_add_themes <- function() {
+add_themes <- function() {
 
   # find folder
   theme_folder <- system.file("rstudio", "themes", package = "alluseful")

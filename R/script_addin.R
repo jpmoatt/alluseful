@@ -18,7 +18,7 @@
 #'
 #' @export
 
-useful_script_addin <- function() {
+script_addin <- function() {
 
   # make FS header template
   header <- stringr::str_c(

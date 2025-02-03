@@ -16,7 +16,7 @@
 #'
 #' @export
 
-useful_proj_template <- function(path, ...) {
+proj_template <- function(path, ...) {
   # ensure path exists
   dir.create(path, recursive = TRUE, showWarnings = FALSE)
 
@@ -35,7 +35,7 @@ useful_proj_template <- function(path, ...) {
                          params$title)
 
 
-  alluseful::useful_readme(format = params$readme,
+  alluseful::create_readme(format = params$readme,
                            file_path = path,
                            readme_title = params$title)
 
@@ -48,7 +48,7 @@ useful_proj_template <- function(path, ...) {
   }
 
   if (params$pipeline) {
-    alluseful::useful_script(file_name = "pipeline",
+    alluseful::create_script(file_name = "pipeline",
                              file_path = path,
                              project = params$title)
   }

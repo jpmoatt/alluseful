@@ -13,7 +13,7 @@
 #' updated .Rprofile
 #'
 #' @export
-useful_proj_pat <- function() {
+set_proj_pat <- function() {
 
   # set path
   rprofile_path <- "./.Rprofile"
