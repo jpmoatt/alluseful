@@ -27,9 +27,9 @@ kisstheme_addin <- function() {
 
 #' @export
 #' @rdname theme_addins
-chaostheme_addin <- function() {
+draculatheme_addin <- function() {
 
-  rstudioapi::applyTheme("my-chaos")
+  rstudioapi::applyTheme("my-dracula")
 
 }
 

@@ -13,9 +13,9 @@ Description: Apply my light theme.
 Binding: lighttheme_addin
 Interactive: false
 
-Name: Apply chaos theme
-Description: Apply my chaos theme.
-Binding: chaostheme_addin
+Name: Apply dracula theme
+Description: Apply my dracula theme.
+Binding: draculatheme_addin
 Interactive: false
 
 Name: Apply grubber theme

@@ -3,7 +3,7 @@
 \name{lighttheme_addin}
 \alias{lighttheme_addin}
 \alias{kisstheme_addin}
-\alias{chaostheme_addin}
+\alias{draculatheme_addin}
 \alias{grubbertheme_addin}
 \alias{randomtheme_addin}
 \title{Apply my rstudio themes via addins}
@@ -12,7 +12,7 @@ lighttheme_addin()
 
 kisstheme_addin()
 
-chaostheme_addin()
+draculatheme_addin()
 
 grubbertheme_addin()
 
