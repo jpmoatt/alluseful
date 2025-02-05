@@ -103,10 +103,10 @@
   color: #f1fa8c
 }
 .ace_comment {
-  color: #6272a4
+  color: #5B7C99
 }
 .ace_comment.ace_sectionhead {
-  color: #5B7C99;
+  color: #6272a4;
 }
 .ace_variable {
   color: #50fa7b
