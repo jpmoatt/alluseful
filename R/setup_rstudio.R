@@ -66,6 +66,7 @@ setup_rstudio <- function(font) {
     load_workspace = FALSE, # don't load previous workspace
     restore_last_project = FALSE, # don't restore last opened project
     continue_comments_on_newline = TRUE, # when commenting, hitting enter continues comment on new line
+    insert_native_pipe_operator = TRUE, # use native pipe
     highlight_selected_line = FALSE, # highlight line cursor is on
     highlight_r_function_calls = TRUE, # highlight R function calls
     show_margin = FALSE, # don't show margin (default = 80 characters)
