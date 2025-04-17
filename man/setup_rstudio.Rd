@@ -4,7 +4,11 @@
 \alias{setup_rstudio}
 \title{Apply my preffered RStudio settings and layout.}
 \usage{
-setup_rstudio()
+setup_rstudio(font)
+}
+\arguments{
+\item{font}{string containing name of font to load. Need to refresh the
+browser window for font change to take effect.}
 }
 \value{
 RStudio configured to my settings
@@ -13,7 +17,7 @@ RStudio configured to my settings
 This function will change the settings and layout of RStudio to my usual
 preferences. This has the source pane on the left, the console and terminal
 on the top right and all others on the bottom right. It also applies my usual
-global options (E.g. rainbow brackedts, hexcode preview on etc).
+global options (E.g. rainbow brackets, hexcode preview on etc).
 }
 \author{
 Josh Moatt
