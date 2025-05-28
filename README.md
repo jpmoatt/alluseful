@@ -1,23 +1,38 @@
 # `alluseful`: my personal R package
 Josh Moatt
-27/05/2025
+28/05/2025
 
 - [📖 Overview](#overview)
 - [🗝️ Key features](#key-features)
+
+<!-- badges: start -->
+
+[![Project Status: Active – The project has reached a stable, usable
+state and is being actively
+developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+![Development
+Status](https://img.shields.io/badge/development-active-brightgreen.png)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/alluseful.png)](https://CRAN.R-project.org/version/alluseful)
+
+<!-- badges: end -->
 
 ## 📖 Overview
 
 `alluseful` is my personal package housing useful functions and addins,
 as well as custom themes for RStudio and font installs. Most of these
 features have been developed to simplify and standardise my ways of
-working. Some of the functions here have been developed for wider use
-and are included in the package
+working. Many features are rough and yet to be polished (as time
+allows).
+
+Some of the functions here have been developed for wider use and are
+included in the package
 [fssetup](https://github.com/Defra-Data-Science-Centre-of-Excellence/fssetup).
 
-> \[!WARNING\] \* This package is intend for my own use and none of the
-> functions or features have been tested for widespread use. \> \* As
-> this was not intended for widespread use, the code underlying this
-> functions is not pretty.
+> [!WARNING]
+>
+> * This package is intend for my own use and none of the functions or features have been tested for widespread use.
+> * As this was not intended for widespread use, the code underlying these functions is not pretty.
 
 ## 🗝️ Key features
 
