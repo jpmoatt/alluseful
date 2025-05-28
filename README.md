@@ -30,7 +30,6 @@ included in the package
 [fssetup](https://github.com/Defra-Data-Science-Centre-of-Excellence/fssetup).
 
 > [!WARNING]
->
 > * This package is intend for my own use and none of the functions or features have been tested for widespread use.
 > * As this was not intended for widespread use, the code underlying these functions is not pretty.
 
