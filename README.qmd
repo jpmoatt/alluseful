@@ -12,7 +12,7 @@ editor_options:
 
 <!-- badges: start -->
 
-[![Project Status: Active -- The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active) ![Development Status](https://img.shields.io/badge/development-active-brightgreen) [![CRAN status](https://www.r-pkg.org/badges/version/alluseful)](https://CRAN.R-project.org/version/alluseful)
+[![Project Status: Active -- The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active) ![Development Status](https://img.shields.io/badge/development-active-brightgreen) [![CRAN status](https://www.r-pkg.org/badges/version/alluseful)](https://CRAN.R-project.org/version/alluseful) ![Version](https://img.shields.io/github/v/release/jpmoatt/alluseful)
 
 <!-- badges: end -->
 

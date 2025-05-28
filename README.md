@@ -15,6 +15,7 @@ developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.re
 Status](https://img.shields.io/badge/development-active-brightgreen.png)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/alluseful.png)](https://CRAN.R-project.org/version/alluseful)
+![Version](https://img.shields.io/github/v/release/jpmoatt/alluseful.png)
 
 <!-- badges: end -->
 
