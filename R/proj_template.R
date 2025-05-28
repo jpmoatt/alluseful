@@ -1,21 +1,18 @@
-#' @title
-#' Function for RStudio project template
+#' @title Create RStudio project template
 #'
 #' @author Josh Moatt
 #'
-#' @description
-#' This is a function that is called in the "New project" viewer pane when the
-#' user chooses the useful project template. It should not be used away from the
-#' RStudio "New project" viewer.
+#' @description This is a function that is called in the "New project" viewer
+#'   pane when the user chooses the useful project template. It should not be
+#'   used away from the RStudio "New project" viewer.
 #'
-#' I have not included additional information on how to use this function, as it
-#' is not intended to be used outside the template call.
+#'   I have not included additional information on how to use this function, as
+#'   it is not intended to be used outside the template call.
 #'
-#' To subsequently link this to a github repo, the best plan is to use
-#' [useful_use_github()].
+#'   To subsequently link this to a github repo, the best plan is to use
+#'   [use_github()].
 #'
 #' @export
-
 proj_template <- function(path, ...) {
   # ensure path exists
   dir.create(path, recursive = TRUE, showWarnings = FALSE)
@@ -30,14 +27,18 @@ proj_template <- function(path, ...) {
   }
 
   # set default title if no text entered
-  params$title <- ifelse(nchar(params$title) < 1,
-                         "Project title",
-                         params$title)
+  params$title <- ifelse(
+    nchar(params$title) < 1,
+    "Project title",
+    params$title
+  )
 
-
-  alluseful::create_readme(format = params$readme,
-                           file_path = path,
-                           readme_title = params$title)
+  # add readme
+  alluseful::create_readme(
+    format = params$readme,
+    file_path = path,
+    readme_title = params$title
+  )
 
   # set file structure
   structure <- c("data", "src", "outputs")
@@ -48,9 +49,11 @@ proj_template <- function(path, ...) {
   }
 
   if (params$pipeline) {
-    alluseful::create_script(file_name = "pipeline",
-                             file_path = path,
-                             project = params$title)
+    alluseful::create_script(
+      file_name = "pipeline",
+      file_path = path,
+      project = params$title
+    )
   }
 
 }

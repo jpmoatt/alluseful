@@ -1,4 +1,6 @@
-#' @title Connect RStudio to your GitHub account
+#' @title Connect RStudio to your GitHub account via PAT
+#'
+#' @author Josh Moatt
 #'
 #' @description This is a simple function which connect RStudio to GitHub,
 #' allowing you to work on GitHub repositories. This is an essential part of
@@ -38,8 +40,7 @@
 #' @return GitHub credentials and PAT set
 #'
 #' @export
-
-connect_github <- function(defra = TRUE) {
+connect_github_pat <- function(defra = TRUE) {
 
   ## set my details ----
   # we only need to set the proxy if on Defra machines.

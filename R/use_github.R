@@ -1,5 +1,7 @@
 #' @title Create a GitHub repository from local project.
 #'
+#' @author Josh Moatt
+#'
 #' @description This simple function will turn your local R project into a git
 #'   repo, then create a repo on GitHub and perform the initial set up and
 #'   commit.
@@ -91,11 +93,12 @@
 #'   created in the users github account.
 #'
 #' @export
-
-use_github <- function(message = "Initial commit",
-                       defra_org = TRUE,
-                       visibility = "private",
-                       github_method = "ssh") {
+use_github <- function(
+    message = "Initial commit",
+    defra_org = TRUE,
+    visibility = "private",
+    github_method = "ssh"
+) {
 
   ## checks ----
 

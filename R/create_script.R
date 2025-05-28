@@ -15,14 +15,15 @@
 #'   date.
 #'
 #' @return An R script will be saved in the root directory or in the specified
-#' folder.
+#'   folder.
 #'
 #' @export
-
-create_script <- function(file_name = NULL,
-                          file_path = NULL,
-                          project = NULL,
-                          date = format(Sys.Date(), "%d/%m/%Y")) {
+create_script <- function(
+    file_name = NULL,
+    file_path = NULL,
+    project = NULL,
+    date = format(Sys.Date(), "%d/%m/%Y")
+) {
   # header
   header <- stringr::str_c(
     "## - - - - - - - - - - - - - -\n",
@@ -74,19 +75,23 @@ create_script <- function(file_name = NULL,
   )
 
   # file name
-  name_script <- ifelse(is.null(file_name),
-                        "New Script",
-                        file_name)
+  name_script <- ifelse(
+    is.null(file_name),
+    "New Script",
+    file_name
+  )
 
   # file path
-  add_to <- ifelse(is.null(file_path),
-                   here::here(glue::glue("{name_script}.R")),
-                   here::here(glue::glue("{file_path}"),
-                              glue::glue("{name_script}.R")))
+  add_to <- ifelse(
+    is.null(file_path),
+    here::here(glue::glue("{name_script}.R")),
+    here::here(glue::glue("{file_path}"), glue::glue("{name_script}.R"))
+  )
 
-
-  # create qmd
-  cat(header,
-      file = add_to,
-      sep = "\n")
+  # create script
+  cat(
+    header,
+    file = add_to,
+    sep = "\n"
+  )
 }

@@ -1,10 +1,10 @@
-#' @title Add my useful R console prompt.
+#' @title Add my R console prompt.
 #'
 #' @author Josh Moatt
 #'
-#' @description Useful function to change the R console prompt from default to
-#' one of two custom options. Either a themed emoji and the git branch, or just
-#' the git branch. This can be set at the user level or the project level.
+#' @description Function to change the R console prompt from default to one of
+#'   two custom options. Either a themed emoji and the git branch, or just the
+#'   git branch. This can be set at the user level or the project level.
 #'
 #' @param scope string. "user" sets the prompt globally, "project" sets it just
 #'   for the active project.
@@ -12,15 +12,15 @@
 #' @param prompt string. "emoji" sets the prompt to be a themed emoji and git
 #'   branch (if active) or "git" sets it to the active git branch.
 #'
-#' @return
-#' Altered R prompt
+#' @return Altered R prompt
 #'
 #' @export
-
-set_console_prompt <- function(scope = c("user",
-                                            "project"),
-                                  prompt = c("emoji",
-                                             "git")) {
+set_console_prompt <- function(
+    scope = c("user",
+              "project"),
+    prompt = c("emoji",
+               "git")
+) {
   # set path
   if (scope == "user") {
     rprofile_path <- "~/.Rprofile"

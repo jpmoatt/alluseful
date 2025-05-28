@@ -37,10 +37,12 @@
 #' @return project files added to specified directory
 #'
 #' @export
-add_proj_files <- function(path = here::here(),
-                           title = "Project title",
-                           readme = "github",
-                           gitignore = TRUE) {
+add_proj_files <- function(
+    path = here::here(),
+    title = "Project title",
+    readme = "github",
+    gitignore = TRUE
+) {
 
   # check format
   if (!readme %in% c("markdown", "github", "html")){
@@ -48,16 +50,24 @@ add_proj_files <- function(path = here::here(),
   }
 
   # add readme
-  alluseful::create_readme(format = readme,
-                           file_path = path,
-                           readme_title = title)
+  alluseful::create_readme(
+    format = readme,
+    file_path = path,
+    readme_title = title
+  )
 
   # add pipeline script
-  alluseful::create_script(file_name = "pipeline",
-                           file_path = path)
+  alluseful::create_script(
+    file_name = "pipeline",
+    file_path = path
+  )
 
   # set file structure
-  structure <- c("data", "src", "outputs")
+  structure <- c(
+    "data",
+    "src",
+    "outputs"
+  )
 
   # add folders based on structure
   for (folder in structure) {

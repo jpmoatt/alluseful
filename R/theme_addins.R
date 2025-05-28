@@ -1,13 +1,10 @@
-#' @title
-#' Apply my rstudio themes via addins
+#' @title Apply my rstudio themes via addins
 #'
 #' @author Josh Moatt
 #'
-#' @description
-#' Addins to apply my rstudio themes
+#' @description Addins to apply my rstudio themes
 #'
-#' @return
-#' themes added to the rstudio api
+#' @return themes added to the rstudio api
 #'
 #' @export
 #' @rdname theme_addins
@@ -38,22 +35,5 @@ draculatheme_addin <- function() {
 grubbertheme_addin <- function() {
 
   rstudioapi::applyTheme("my-grubber")
-
-}
-
-#' @export
-#' @rdname theme_addins
-randomtheme_addin <- function() {
-
-  # themes I use
-  themes <- c("my-kiss",
-              "my-grubber",
-              "my-chaos",
-              "my-night-owl")
-
-  # select random
-  theme <- sample(themes, 1)
-
-  rstudioapi::applyTheme(theme)
 
 }

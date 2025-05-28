@@ -3,21 +3,20 @@
 #' @author Josh Moatt
 #'
 #' @description This addin will open a new blank R script which is populated
-#' with my header.
+#'   with my header.
 #'
 #' @details This addin will create a new blank script that is populated with my
-#' template header.
+#'   template header.
 #'
-#' Addins must use the rstudioapi package. This addin uses the [documentNew()]
-#' function from the `rstudioapi` package to open the new R script.
+#'   Addins must use the rstudioapi package. This addin uses the [documentNew()]
+#'   function from the `rstudioapi` package to open the new R script.
 #'
-#' Note: this opens an normal untitled script. It must be manually saved in the
-#' correct directory.
+#'   Note: this opens an normal untitled script. It must be manually saved in
+#'   the correct directory.
 #'
 #' @return A script will open in RStudio.
 #'
 #' @export
-
 script_addin <- function() {
 
   # make FS header template
@@ -66,11 +65,14 @@ script_addin <- function() {
     "## - - - - - - - - - - - - - - \n",
     "## Sourced files: \n",
     "\n",
-    "## - - - - - - - - - - - - - - \n")
+    "## - - - - - - - - - - - - - - \n"
+  )
 
   # Open using Rstudio API
-  rstudioapi::documentNew(text = header,
-                          type = "r",
-                          execute = FALSE,
-                          position = 43)
+  rstudioapi::documentNew(
+    text = header,
+    type = "r",
+    execute = FALSE,
+    position = 43
+  )
 }

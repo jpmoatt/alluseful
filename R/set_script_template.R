@@ -1,17 +1,15 @@
-#' @title
-#' Create an default R script template.
+#' @title Create an default R script template.
 #'
 #' @author Josh Moatt
 #'
-#' @description
-#' This function can be used to create a default R script template. All scripts
-#' opened from this point will have this template applied as a header.
+#' @description This function can be used to create a default R script template.
+#' All scripts opened from this point will have this template applied as a
+#' header.
 #'
-#' @details
-#' This function is used to create a new template for R scripts. This will be
-#' the default that all subsequent R scripts opened will contain. By doing this
-#' is it should be easier to follow best practice and properly comment all
-#' scripts you create.
+#' @details This function is used to create a new template for R scripts. This
+#' will be the default that all subsequent R scripts opened will contain. By
+#' doing this is it should be easier to follow best practice and properly
+#' comment all scripts you create.
 #'
 #' The default is stored in the appdata folder on your c drive:
 #' "~/AppData/Roaming/RStudio". It will create a "templates" folder where the
@@ -53,19 +51,20 @@
 #'   provided if using format = "custom" or the function will return an error.
 #'
 #' @param dash default is FALSE. If TRUE changes the file path to the one needed
-#'  for the RStudio server on DASH
+#'   for the RStudio server on DASH
 #'
-#' @return
-#' New .R file created containing the script template
+#' @return New .R file created containing the script template
 #'
 #' @export
-
-set_script_template <- function(format = c("mine",
-                                           "custom",
-                                           "manual_edit",
-                                           "blank"),
-                                   template = NULL,
-                                   dash = TRUE) {
+set_script_template <- function(
+    format = c(
+      "mine",
+      "manual_edit",
+      "blank"
+    ),
+    template = NULL,
+    dash = TRUE
+) {
 
   file_path <- ifelse(dash,
                       "~/.config/rstudio/templates",
@@ -130,24 +129,6 @@ set_script_template <- function(format = c("mine",
 
     # Create default R script template with header
     cat(header,
-        file = fs::path_expand(paste0(file_path, "/default.R")),
-        sep = "\n")
-
-  } else if (format == "custom") {
-
-    # check template provided
-    if (is.null(template)){
-      cli::cli_alert_danger(cli::col_red("No template provided - aborting!"))
-      stop("Error: no template provided.")
-    }
-
-    # create template file if it doesn't exist already
-    if (!fs::file_exists(file_path)) {
-      fs::dir_create(path = file_path)
-    }
-
-    # Create default R script template with header provided
-    cat(template,
         file = fs::path_expand(paste0(file_path, "/default.R")),
         sep = "\n")
 

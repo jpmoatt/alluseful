@@ -1,16 +1,14 @@
-#' @title
-#' Add [set_github_pat()] to project specific .Rprofiles
+#' @title Add [set_github_pat()] to project specific .Rprofiles
 #'
 #' @author Josh Moatt
 #'
-#' @description
-#' A simple function to add the [set_github_pat()] function call to your project
-#' specific .Rprofile. This is needed for projects where `renv` is activated, so
-#' you can avoid hardcoding your PAT anywhere. See [useful_connect_github] for
-#' full details and reasoning behind this function.
+#' @description A simple function to add the [credentials::set_github_pat()]
+#'   function call to your project specific .Rprofile. This is needed for
+#'   projects where `renv` is activated, so you can avoid hardcoding your PAT
+#'   anywhere. See [connect_github_pat] for full details and reasoning behind
+#'   this function.
 #'
-#' @return
-#' updated .Rprofile
+#' @return updated .Rprofile
 #'
 #' @export
 set_proj_pat <- function() {

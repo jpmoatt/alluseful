@@ -1,13 +1,10 @@
-#' @title
-#' Add my rstudio themes
+#' @title Add my rstudio themes
 #'
 #' @author Josh Moatt
 #'
-#' @description
-#' Function to add my rstudio themes from within this package.
+#' @description Function to add my rstudio themes from within this package.
 #'
-#' @return
-#' themes added to the rstudio api
+#' @return themes added to the rstudio api
 #'
 #' @export
 add_themes <- function() {
@@ -20,8 +17,10 @@ add_themes <- function() {
 
   # add themes
   for (i in 1:length(my_themes)) {
-    rstudioapi::addTheme(themePath = glue::glue("{theme_folder}/{my_themes[i]}"),
-                         apply = FALSE,
-                         force = TRUE)
+    rstudioapi::addTheme(
+      themePath = glue::glue("{theme_folder}/{my_themes[i]}"),
+      apply = FALSE,
+      force = TRUE
+    )
   }
 }

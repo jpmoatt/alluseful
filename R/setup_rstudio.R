@@ -1,22 +1,18 @@
-#' @title
-#' Apply my preffered RStudio settings and layout.
+#' @title Apply my preferred RStudio settings and layout.
 #'
 #' @author Josh Moatt
 #'
+#' @description This function will change the settings and layout of RStudio to
+#' my usual preferences. This has the source pane on the left, the console and
+#' terminal on the top right and all others on the bottom right. It also applies
+#' my usual global options (E.g. rainbow brackets, hexcode preview on etc).
+#'
 #' @param font string containing name of font to load. Need to refresh the
-#' browser window for font change to take effect.
+#'   browser window for font change to take effect.
 #'
-#' @description
-#' This function will change the settings and layout of RStudio to my usual
-#' preferences. This has the source pane on the left, the console and terminal
-#' on the top right and all others on the bottom right. It also applies my usual
-#' global options (E.g. rainbow brackets, hexcode preview on etc).
-#'
-#' @return
-#' RStudio configured to my settings
+#' @return RStudio configured to my settings
 #'
 #' @export
-
 setup_rstudio <- function(font) {
 
   # function for applying changes
