@@ -5,7 +5,6 @@
 \alias{kisstheme_addin}
 \alias{draculatheme_addin}
 \alias{grubbertheme_addin}
-\alias{randomtheme_addin}
 \title{Apply my rstudio themes via addins}
 \usage{
 lighttheme_addin()
@@ -15,8 +14,6 @@ kisstheme_addin()
 draculatheme_addin()
 
 grubbertheme_addin()
-
-randomtheme_addin()
 }
 \value{
 themes added to the rstudio api

@@ -2,7 +2,7 @@
 % Please edit documentation in R/setup_rstudio.R
 \name{setup_rstudio}
 \alias{setup_rstudio}
-\title{Apply my preffered RStudio settings and layout.}
+\title{Apply my preferred RStudio settings and layout.}
 \usage{
 setup_rstudio(font)
 }
@@ -14,10 +14,10 @@ browser window for font change to take effect.}
 RStudio configured to my settings
 }
 \description{
-This function will change the settings and layout of RStudio to my usual
-preferences. This has the source pane on the left, the console and terminal
-on the top right and all others on the bottom right. It also applies my usual
-global options (E.g. rainbow brackets, hexcode preview on etc).
+This function will change the settings and layout of RStudio to
+my usual preferences. This has the source pane on the left, the console and
+terminal on the top right and all others on the bottom right. It also applies
+my usual global options (E.g. rainbow brackets, hexcode preview on etc).
 }
 \author{
 Josh Moatt

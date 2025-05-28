@@ -10,10 +10,11 @@ set_proj_pat()
 updated .Rprofile
 }
 \description{
-A simple function to add the \code{\link[=set_github_pat]{set_github_pat()}} function call to your project
-specific .Rprofile. This is needed for projects where \code{renv} is activated, so
-you can avoid hardcoding your PAT anywhere. See \link{useful_connect_github} for
-full details and reasoning behind this function.
+A simple function to add the \code{\link[credentials:set_github_pat]{credentials::set_github_pat()}}
+function call to your project specific .Rprofile. This is needed for
+projects where \code{renv} is activated, so you can avoid hardcoding your PAT
+anywhere. See \link{connect_github_pat} for full details and reasoning behind
+this function.
 }
 \author{
 Josh Moatt

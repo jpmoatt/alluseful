@@ -28,8 +28,8 @@ Use this function to create a README for a project.
 }
 \details{
 This function will create a README for a project using a pre-defined
-template. The function will create a Quarto (.qmd) file and do a first render
-producing a desired output.
+template. The function will create a Quarto (.qmd) file and do a first
+render producing a desired output.
 
 The output type can be controlled using the format option (default is
 markdown). Can also be html or github (gfm).

@@ -2,7 +2,7 @@
 % Please edit documentation in R/set_console_prompt.R
 \name{set_console_prompt}
 \alias{set_console_prompt}
-\title{Add my useful R console prompt.}
+\title{Add my R console prompt.}
 \usage{
 set_console_prompt(scope = c("user", "project"), prompt = c("emoji", "git"))
 }
@@ -17,9 +17,9 @@ branch (if active) or "git" sets it to the active git branch.}
 Altered R prompt
 }
 \description{
-Useful function to change the R console prompt from default to
-one of two custom options. Either a themed emoji and the git branch, or just
-the git branch. This can be set at the user level or the project level.
+Function to change the R console prompt from default to one of
+two custom options. Either a themed emoji and the git branch, or just the
+git branch. This can be set at the user level or the project level.
 }
 \author{
 Josh Moatt

@@ -20,8 +20,8 @@ template header.
 Addins must use the rstudioapi package. This addin uses the \code{\link[=documentNew]{documentNew()}}
 function from the \code{rstudioapi} package to open the new R script.
 
-Note: this opens an normal untitled script. It must be manually saved in the
-correct directory.
+Note: this opens an normal untitled script. It must be manually saved in
+the correct directory.
 }
 \author{
 Josh Moatt

@@ -5,7 +5,7 @@
 \title{Create an default R script template.}
 \usage{
 set_script_template(
-  format = c("mine", "custom", "manual_edit", "blank"),
+  format = c("mine", "manual_edit", "blank"),
   template = NULL,
   dash = TRUE
 )
@@ -29,14 +29,15 @@ for the RStudio server on DASH}
 New .R file created containing the script template
 }
 \description{
-This function can be used to create a default R script template. All scripts
-opened from this point will have this template applied as a header.
+This function can be used to create a default R script template.
+All scripts opened from this point will have this template applied as a
+header.
 }
 \details{
-This function is used to create a new template for R scripts. This will be
-the default that all subsequent R scripts opened will contain. By doing this
-is it should be easier to follow best practice and properly comment all
-scripts you create.
+This function is used to create a new template for R scripts. This
+will be the default that all subsequent R scripts opened will contain. By
+doing this is it should be easier to follow best practice and properly
+comment all scripts you create.
 
 The default is stored in the appdata folder on your c drive:
 "~/AppData/Roaming/RStudio". It will create a "templates" folder where the

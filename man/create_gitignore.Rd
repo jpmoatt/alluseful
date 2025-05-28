@@ -26,8 +26,8 @@ A gitignore file is added to the project.
 Use this function to create a gitignore for a  project.
 }
 \details{
-This function will create a gitignore for a project using a pre-defined
-template.
+This function will create a gitignore for a project using a
+pre-defined template.
 
 Used as default, it will automatically add the data and output folders (as
 created in the project template). This is to ensure nor restricted data or
@@ -38,4 +38,7 @@ Alternatively, a custom gitignore can be provided by setting \code{type} to
 
 Note it will replace any existing .gitignore files present in the project
 already.
+}
+\author{
+Josh Moatt
 }

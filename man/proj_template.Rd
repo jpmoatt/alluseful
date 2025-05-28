@@ -2,20 +2,20 @@
 % Please edit documentation in R/proj_template.R
 \name{proj_template}
 \alias{proj_template}
-\title{Function for RStudio project template}
+\title{Create RStudio project template}
 \usage{
 proj_template(path, ...)
 }
 \description{
-This is a function that is called in the "New project" viewer pane when the
-user chooses the useful project template. It should not be used away from the
-RStudio "New project" viewer.
+This is a function that is called in the "New project" viewer
+pane when the user chooses the useful project template. It should not be
+used away from the RStudio "New project" viewer.
 
-I have not included additional information on how to use this function, as it
-is not intended to be used outside the template call.
+I have not included additional information on how to use this function, as
+it is not intended to be used outside the template call.
 
 To subsequently link this to a github repo, the best plan is to use
-\code{\link[=useful_use_github]{useful_use_github()}}.
+\code{\link[=use_github]{use_github()}}.
 }
 \author{
 Josh Moatt
