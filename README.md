@@ -19,11 +19,10 @@ status](https://www.r-pkg.org/badges/version/alluseful.png)](https://CRAN.R-proj
 
 ## 📖 Overview
 
-`alluseful` is my personal package housing useful functions and addins,
-as well as custom themes for RStudio and font installs. Most of these
-features have been developed to simplify and standardise my ways of
-working. Many features are rough and yet to be polished (as time
-allows).
+`alluseful` is my personal package, created to contain all the useful
+elements I need for effective coding. It contains functions to set up my
+rstudio IDE how I like, personalised themes, editor fonts, templates for
+scripts, packages etc.
 
 Some of the functions here have been developed for wider use and are
 included in the package
@@ -38,8 +37,7 @@ included in the package
 
 - Functions for automating the set up of the RStudio IDE - preferences,
   pane layout etc
-- Custom console prompt showing a farming themed emoji and active git
-  branch
+- Custom console prompt - including useful git branch info
 - Project template - so all new RStudio projects are pre-populated with
   key files
 - Script template - so all new scripts open with a standardised header
