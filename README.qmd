@@ -19,7 +19,7 @@ editor_options:
 ## 📖 Overview
 
 `alluseful` is my personal package, created to contain all the useful elements 
- I need for effective coding. It contains functions to set up my rstudio IDE how I like,
+ I need for effective coding. It contains functions to set up my RStudio IDE how I like,
  personalised themes, editor fonts, templates for scripts, packages etc. 
 
 Some of the functions here have been developed for wider use and are included in the package [fssetup](https://github.com/Defra-Data-Science-Centre-of-Excellence/fssetup).

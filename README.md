@@ -1,9 +1,10 @@
-# `alluseful`: my personal R package
+`alluseful`: my personal R package
+================
 Josh Moatt
 28/05/2025
 
-- [📖 Overview](#overview)
-- [🗝️ Key features](#key-features)
+- <a href="#overview" id="toc-overview">📖 Overview</a>
+- <a href="#key-features" id="toc-key-features">🗝️ Key features</a>
 
 <!-- badges: start -->
 
@@ -21,7 +22,7 @@ status](https://www.r-pkg.org/badges/version/alluseful.png)](https://CRAN.R-proj
 
 `alluseful` is my personal package, created to contain all the useful
 elements I need for effective coding. It contains functions to set up my
-rstudio IDE how I like, personalised themes, editor fonts, templates for
+RStudio IDE how I like, personalised themes, editor fonts, templates for
 scripts, packages etc.
 
 Some of the functions here have been developed for wider use and are
