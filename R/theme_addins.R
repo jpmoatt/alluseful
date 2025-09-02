@@ -32,8 +32,8 @@ draculatheme_addin <- function() {
 
 #' @export
 #' @rdname theme_addins
-grubbertheme_addin <- function() {
+cobalttheme_addin <- function() {
 
-  rstudioapi::applyTheme("my-grubber")
+  rstudioapi::applyTheme("my-cobalt")
 
 }
