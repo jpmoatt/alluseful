@@ -122,6 +122,10 @@
 *
 */
 
+.ace_content {
+  font-variant-ligatures: normal;
+}
+
 .ace_gutter {
   background: var(--my-dark-gutter);
   color: var(--my-dark-gutter-fg);

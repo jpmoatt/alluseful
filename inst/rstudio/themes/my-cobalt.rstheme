@@ -12,6 +12,9 @@
   background-color: #002240;
   color: #FFFFFF
 }
+.ace_content {
+  font-variant-ligatures: normal;
+}
 .ace_cursor {
   color: #FFFFFF
 }

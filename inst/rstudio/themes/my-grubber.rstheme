@@ -31,6 +31,9 @@
 
 }
 
+.ace_content {
+  font-variant-ligatures: normal;
+}
 
 
 .ace_cursor {

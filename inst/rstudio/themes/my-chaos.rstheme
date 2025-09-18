@@ -29,6 +29,9 @@
   background-color: #161616;
   color: #E6E1DC;
 }
+.ace_content {
+  font-variant-ligatures: normal;
+}
 .ace_cursor {
   border-left: 2px solid #FFFFFF;
 }

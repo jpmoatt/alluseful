@@ -16,6 +16,10 @@
   color: #000000;
 }
 
+.ace_content {
+  font-variant-ligatures: normal;
+}
+
 .ace_cursor {
   color: #E78AC3;
 }
