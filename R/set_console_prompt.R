@@ -44,11 +44,12 @@ set_console_prompt <- function(
                                           ignore.stderr = TRUE,
                                           intern = TRUE))
     # list of emojis
-    emoji_list <- c("tractor", "man_farmer", "woman_farmer", "deer", "ox", "boar",
-                    "cow", "pig", "ram", "ewe", "goat", "rooster", "egg", "chicken",
-                    "herb", "sheaf_of_rice", "green_apple", "mushroom", "sunflower",
-                    "seedling", "red_apple", "pear", "strawberry", "carrot", "potato",
-                    "broccoli", "onion")
+    emoji_list <- c(
+      "🌾", "🌿", "🌱", "🌻", "🌽", "🥦", "🥬", "🧅", "🍏",
+      "🐄", "🐖", "🐑", "🐓", "🐐", "🐎", "🚜", "🥔", "🍅",
+      "🫘", "🍎", "🍓"
+    )
+
     # randomly sample
     emoj <- sample(emoji_list, replace = TRUE, size = 1)
     # branch name
@@ -58,7 +59,7 @@ set_console_prompt <- function(
       git_msg <- ""
     }
     console_msg <- paste0(
-      "[", emoji::emoji(emoj), git_msg, "]> "
+      "[", emoj, git_msg, "]> "
     )
 
     options(prompt = console_msg)
