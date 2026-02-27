@@ -10,7 +10,7 @@ Interactive: false
 
 Name: Apply light theme
 Description: Apply my light theme.
-Binding: lighttheme_addin
+Binding: sqllight_addin
 Interactive: false
 
 Name: Apply cobalt theme

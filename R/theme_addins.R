@@ -8,9 +8,9 @@
 #'
 #' @export
 #' @rdname theme_addins
-lighttheme_addin <- function() {
+sqllight_addin <- function() {
 
-  rstudioapi::applyTheme("my-light")
+  rstudioapi::applyTheme("my-sqlserver")
 
 }
 
